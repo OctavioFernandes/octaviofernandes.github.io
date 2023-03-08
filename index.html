@@ -6,31 +6,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/codepen.svg">
-    <title>Document</title>
-
+    <title>Site</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
 
 <body>
-    <p>Texto a registar na bd</p>
-    <input type="text" id="texto">
-    <input type="submit" value="Escrever" onclick="PostBd()">
+    <!-- Sidebar -->
+    <div class="sidebar-body" id="sidebar-body">
+        <nav class="sidebar">
+            <div class="sidebar-inner">
+                <header class="sidebar-header"></header>
+
+                <nav class="sidebar-menu">
+
+                    <button class="sidebar-burger" onclick="toggleSidebar()">
+                        <i class="fa-solid fa-bars fa-lg" id="burg-btn"></i>
+                        <i class="fa-solid fa-xmark fa-lg" id="close-btn"></i>
+                    </button>
+
+                    <button type="button">
+                        <div class="sidebar-align">
+                            <i class="fa-solid fa-utensils fa-lg"></i>
+                        </div>
+                        <span>Meals</span>
+                    </button>
+
+                    <button type="button">
+                        <div class="sidebar-align">
+                            <i class="fa-solid fa-calendar-week fa-lg"></i>
+                        </div>
+                        <span>Weakly meals</span>
+                    </button>
+
+                    <button type="button">
+                        <div class="sidebar-align">
+                            <i class="fa-solid fa-basket-shopping fa-lg"></i>
+                        </div>
+                        <span>Grocery list</span>
+
+                    </button>
+
+                    <button type="button">
+                        <div class="sidebar-align">
+                            <i class="fa-solid fa-list-check fa-lg"></i>
+                        </div>
+                        <span>ToDo Lists</span>
+                    </button>
+
+                    <button type="button">
+                        <div class="sidebar-align">
+                            <i class="fa-solid fa-right-from-bracket fa-lg"></i>
+                        </div>
+                        <span>Logout</span>
+                    </button>
+
+                </nav>
+            </div>
+        </nav>
+    </div>
+    <!-- Sidebar -->
+    <div id="mainpage">
+        <p>Texto a registar na bd</p>
+        <input type="text" id="texto">
+        <input type="submit" value="Escrever" onclick="PostBd()">
+    </div>
+
+
 
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
     <script src="firebase.js"></script>
-    
+    <script src="index.js"></script>
+
 </body>
 
 </html>
-
-
-
-
-
-
-
-

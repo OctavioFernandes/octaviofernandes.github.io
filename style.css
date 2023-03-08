@@ -2,4 +2,90 @@
     margin: 0;
     border: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* sidebar */
+
+.sidebar-body {
+    margin: 0;
+    background: #121212;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 100%;
+    background: #121212;
+    transition: width 0.4s;
+}
+
+.sidebar-body.open .sidebar {
+    width: 150px;
+}
+
+.sidebar-body i {
+    color: #f9f9f9;
+}
+
+.sidebar-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    padding: 0 1.25rem 0 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-burger {
+    padding-left: 15px;
+    display: grid;
+    place-items: center;
+}
+
+.sidebar-menu>button {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    height: 40px;
+    font-size: 13px;
+    padding: 0 15px;
+}
+
+.sidebar-menu button span {
+    color: #f9f9f9;
+}
+
+#burg-btn.open{
+    display: none;
+}
+
+#close-btn{
+    display: none;
+}
+#close-btn.open{
+    display: flex;
+}
+
+#mainpage{
+    margin-left: 45px;
+}
+.sidebar-align{
+    width: 6px;
 }

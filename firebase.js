@@ -18,13 +18,13 @@
         appId: "1:1077604731878:web:1ba4ee90f0ee9a497b6427",
         measurementId: "G-GNQ9WTWDRZ"
     };
-
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-
     // const analytics = getAnalytics(app);
 })()
 
+
+console.log("firebase.js on!!")
 function PostBd() {
 
     console.log(document.getElementById("texto").value);
