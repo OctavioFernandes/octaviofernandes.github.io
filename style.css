@@ -3,6 +3,7 @@
     border: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 /* sidebar */
@@ -88,4 +89,37 @@ button {
 }
 .sidebar-align{
     width: 6px;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-bottom: 1px solid #121212;
+    margin: 4px;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    border-top: 1px solid #121212;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    /* left: 55px; */
+    /* width: 100%; */
+}
+
+/* Body  */
+
+.body{
+    margin: 4px;
 }
