@@ -2,20 +2,14 @@ const urlPageTittle = "Site"
 
 document.addEventListener("click", (e) => {
     const { target } = e;
-    // console.log("é um span?")
-    // console.log(target.matches("span"))
 
     if (!target.matches("i") && !target.matches("span")
         || target.id === "burg-btn"
         || target.id === "close-btn") {
-        // console.log("RETURN")
         return;
     }
-    console.log()
 
-    // console.log("i")
-
-    e.preventDefault();  // o que faz?
+    e.preventDefault();
     urlRoute();
 });
 
