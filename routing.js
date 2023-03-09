@@ -20,7 +20,7 @@ const urlRoutes = {
         description: ""
     },
     "/": {
-        template: "/components/home.html",
+        template: "home.html",
         title: "Home | " + urlPageTittle,
         description: ""
     },
@@ -30,22 +30,22 @@ const urlRoutes = {
         description: ""
     },
     "/meals": {
-        template: "/components/meals.html",
+        template: "/meals.html",
         title: "Meals | " + urlPageTittle,
         description: ""
     },
     "/weakly-meals": {
-        template: "/components/weakly-meals.html",
+        template: "/weakly-meals.html",
         title: "Weakly Meals | " + urlPageTittle,
         description: ""
     },
     "/grocery-list": {
-        template: "/components/grocery-list.html",
+        template: "/grocery-list.html",
         title: "Grocery List | " + urlPageTittle,
         description: ""
     },
     "/to-do-list": {
-        template: "/components/to-do-list.html",
+        template: "/to-do-list.html",
         title: "Todo List | " + urlPageTittle,
         description: ""
     }
