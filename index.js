@@ -5,8 +5,7 @@ let sidebar = document.getElementById("sidebar-body");
 let burgBtn = document.getElementById("burg-btn");
 let closeBtn = document.getElementById("close-btn");
 
-function toggleSidebar() {
-    // console.log("entrei na função")
+function toggleSidebar(e) {
     sidebarShow = !sidebarShow;
 
     if (sidebarShow) {
@@ -18,6 +17,8 @@ function toggleSidebar() {
         closeBtn.classList.remove("open")
         burgBtn.classList.remove("open")
     }
+
+    e.stopPropagation()
 }
 
 document.addEventListener("click", function () {
@@ -25,10 +26,6 @@ document.addEventListener("click", function () {
     sidebar.classList.remove("open");
     closeBtn.classList.remove("open")
     burgBtn.classList.remove("open")
-})
-
-sidebar.addEventListener("click", (e) => {
-    e.stopPropagation()
 })
 
 

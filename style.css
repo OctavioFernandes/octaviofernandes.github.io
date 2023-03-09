@@ -6,6 +6,10 @@
     font-family: 'Nunito', sans-serif;
 }
 
+i{
+    cursor: pointer;
+}
+
 /* sidebar */
 
 .sidebar-body {

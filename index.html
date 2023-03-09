@@ -33,38 +33,40 @@
 
                 <nav class="sidebar-menu">
 
-                    <button class="sidebar-burger" onclick="toggleSidebar()">
-                        <i class="fa-solid fa-bars fa-lg" id="burg-btn"></i>
-                        <i class="fa-solid fa-xmark fa-lg" id="close-btn"></i>
+                    <button class="sidebar-burger" onclick="toggleSidebar(event)">
+                        <div class="sidebar-align">
+                            <i class="fa-solid fa-bars fa-lg" id="burg-btn"></i>
+                            <i class="fa-solid fa-xmark fa-lg" id="close-btn"></i>
+                        </div>
+                    </button>
+
+                    <button type="button" title="Meals">
+                        <div class="sidebar-align">
+                            <i class="fa-solid fa-utensils fa-lg" id="/meals"></i>
+                        </div>
+                        <span id="/meals">Meals</span>
                     </button>
 
                     <button type="button">
                         <div class="sidebar-align">
-                            <i class="fa-solid fa-utensils fa-lg"></i>
+                            <i class="fa-solid fa-calendar-week fa-lg" id="/weakly-meals"></i>
                         </div>
-                        <span>Meals</span>
+                        <span id="/weakly-meals">Weakly meals</span>
                     </button>
 
                     <button type="button">
                         <div class="sidebar-align">
-                            <i class="fa-solid fa-calendar-week fa-lg"></i>
+                            <i class="fa-solid fa-basket-shopping fa-lg" id="/grocery-list"></i>
                         </div>
-                        <span>Weakly meals</span>
-                    </button>
-
-                    <button type="button">
-                        <div class="sidebar-align">
-                            <i class="fa-solid fa-basket-shopping fa-lg"></i>
-                        </div>
-                        <span>Grocery list</span>
+                        <span id="/grocery-list">Grocery list</span>
 
                     </button>
 
                     <button type="button">
                         <div class="sidebar-align">
-                            <i class="fa-solid fa-list-check fa-lg"></i>
+                            <i class="fa-solid fa-list-check fa-lg" id="/to-do-list"></i>
                         </div>
-                        <span>ToDo Lists</span>
+                        <span id="/to-do-list">ToDo Lists</span>
                     </button>
 
                     <button type="button">
@@ -87,24 +89,17 @@
         </header>
 
         <div class="body">
-            <p>Em Contrução....</p><br><br>
-            <b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem harum in enim dolore odio odit eum
-                maxime
-                illo neque reprehenderit, pariatur architecto magnam dolorum quisquam, ducimus eligendi sint
-                dignissimos.
-                Soluta!</b><br><br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis minus est eveniet ut atque temporibus unde
-            distinctio non consequatur voluptates soluta, quos eius laudantium, consectetur reprehenderit, deserunt quo.
-            Vitae, iusto!
-
+            <!-- <p>Em Contrução....</p><br><br> -->
+            <!-- Routing -->
+            <div id="content"></div>
         </div>
+
+
         <div>
             <footer>
                 <p style="font-weight: 1000;">Footer</p>
             </footer>
         </div>
-
-
 
         <!-- <p>Texto a registar na bd</p>
         <input type="text" id="texto">
@@ -117,6 +112,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
     <script src="firebase.js"></script>
     <script src="index.js"></script>
+    <script src="routing.js"></script>
 
 </body>
 
