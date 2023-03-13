@@ -37,3 +37,39 @@ function PostBd() {
     document.getElementById("texto").value = '';
 }
 
+function InsertMeal(type,title,ingredients,preparationMinutes,preparationTips) {
+
+    var id = firebase.database().ref().child('meals').push().key;
+    console.log(id)
+
+    firebase.database().ref('/meals/' + id).set({
+        type: type,
+        title: title,
+        ingredients: ingredients,
+        preparationMinutes: preparationMinutes,
+        preparationTips: preparationTips
+    });
+
+    console.log("meals insert!!")
+}
+
+// function InsertMeal() {
+
+//     var id = firebase.database().ref().child('meals').push().key;
+//     console.log(id)
+
+//     firebase.database().ref('/meals/' + id).set({
+//         type: "Refeições",
+//         title: "Delicia de atum",
+//         ingredients: "alho frances,\natum,\ncogumelos,\nalho,\ncenoura\nbechamel,\nazeitonas pretas,\nmassa",
+//         preparationMinutes: 45,
+//         preparationTips: "salada a acompanhar, pimenta preta, noz moscada"
+//     });
+
+//     console.log("meals insert!!")
+// }
+
+
+
+
+

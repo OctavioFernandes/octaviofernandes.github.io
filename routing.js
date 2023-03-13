@@ -3,9 +3,10 @@ const urlPageTittle = "Site"
 document.addEventListener("click", (e) => {
     const { target } = e;
 
-    if (!target.matches("i") && !target.matches("span")
+    if (!target.matches("i") && !target.matches("button span")
         || target.id === "burg-btn"
         || target.id === "close-btn") {
+            // console.log("retornei")
         return;
     }
 
@@ -15,7 +16,7 @@ document.addEventListener("click", (e) => {
 
 const urlRoutes = {
     404: {
-        template: "/components/404.html",
+        template: "/404.html",
         title: "404 | " + urlPageTittle,
         description: ""
     },

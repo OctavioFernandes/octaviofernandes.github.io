@@ -1,5 +1,9 @@
 console.log("index.js on!!")
 
+// setInterval(()=>{console.log(document.readyState)
+// },500)
+
+
 let sidebarShow = false;
 let sidebar = document.getElementById("sidebar-body");
 let burgBtn = document.getElementById("burg-btn");
