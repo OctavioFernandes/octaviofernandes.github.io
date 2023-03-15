@@ -31,7 +31,7 @@ button {
   overflow: hidden;
   top: 0;
   left: 0;
-  width: 45px;
+  width: 50px;
   height: 100%;
   background: #121212;
   transition: width 0.4s;
@@ -45,6 +45,7 @@ button {
 
 .sidebar-body i {
   color: #f9f9f9;
+  width: 22px;
 }
 
 .sidebar-inner {
@@ -78,6 +79,7 @@ button {
 }
 
 .sidebar-menu button span {
+  margin-left: 14px;
   color: #f9f9f9;
 }
 
