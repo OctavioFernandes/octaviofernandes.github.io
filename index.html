@@ -41,6 +41,13 @@
                         </div>
                     </button>
 
+                    <button type="button" title="Home">
+                        <div class="sidebar-align">
+                            <i class="fa-solid fa-house" id="/"></i>
+                        </div>
+                        <span id="/">Home</span>
+                    </button>
+
                     <button type="button" title="Meals">
                         <div class="sidebar-align">
                             <i class="fa-solid fa-utensils fa-lg" id="/meals"></i>
@@ -93,18 +100,49 @@
         <div class="body">
             <!-- <a onclick="InsertMeal()">Insert Meal</a> -->
 
-            <form style="display: flex; flex-direction: column;" id="mls-form">
-                <br><br>
-                <div class="mls-label"><label for="type">Type: </label><input type="text" id="mls-type"></div>
-                <div class="mls-label"><label for="type">Title: </label><input type="text" id="mls-title"></div>
-                <div class="mls-label"><label for="type">Ingredients: </label><input type="text" id="mls-ingredients"></div>
-                <div class="mls-label"><label for="type">Preparation Minutes: </label><input type="text" id="mls-preparationMinutes"></div>
-                <div class="mls-label"><label for="type">Preparation Tips: </label><input type="text" id="mls-preparationTips"></div>
+            <!-- <form style="display: flex; flex-direction: column;" id="mls-form">
+                <div class="mls-inp-box"><label for="type">Type: </label><input type="text" id="mls-type"></div>
+                <div class="mls-inp-box"><label for="type">Title: </label><input type="text" id="mls-title"></div>
+                <div class="mls-inp-box"><label for="type">Ingredients: </label><input type="text" id="mls-ingredients"></div>
+
+                <div class="mls-inp-box"><label for="type">Ingredients: </label><textarea name="" id="" cols="30" rows="10"></textarea>
+                <div class="mls-inp-box"><label for="type">Preparation Minutes: </label><input type="number"
+                        id="mls-preparationMinutes"></div>
+                <div class="mls-inp-box"><label for="type">Preparation Tips: </label><input type="text"
+                        id="mls-preparationTips"></div>
+                <div class="mls-sub-btn"><input type="button" value="Registar"></div>
+
+            </form> -->
+
+            <form id="mls-form">
+                <div>
+                    <label>Type:</label>
+                        <select id="mls-type">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                </div>
+                <div>
+                    <label>Title:</label><input type="text">
+                </div>
+                <div>
+                    <label>Ingredients:</label>
+                    <textarea id="" cols="30" rows="4"></textarea>
+                </div>
+                <div>
+                    <label>Preparation Minutes:</label><input type="number" max="999">
+                </div>
+                <div>
+                    <label>Preparation Tips:</label><input type="text">
+                </div>
+                <div>
+                    <div>Registar</div>
+                </div>
             </form>
 
 
             <!-- Routing -->
-            <br><br>
             <div id="content"></div>
         </div>
 

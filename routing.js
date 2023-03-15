@@ -25,8 +25,8 @@ const urlRoutes = {
         title: "Home | " + urlPageTittle,
         description: ""
     },
-    "/index.html": {
-        template: "/components/home.html",
+    "/index": {
+        template: "/home.html",
         title: "Home | " + urlPageTittle,
         description: ""
     },
@@ -50,6 +50,7 @@ const urlRoutes = {
         title: "Todo List | " + urlPageTittle,
         description: ""
     }
+    
 }
 
 
