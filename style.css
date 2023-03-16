@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+i {
+  cursor: pointer;
+}
+
+/* sidebar */
+
+.sidebar-body {
+  margin: 0;
+  background: #121212;
+  z-index: 10;
+  /* z-index: 999; */
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background: #121212;
+  transition: width 0.4s;
+  z-index: 10;
+}
+
+.sidebar-body.open .sidebar {
+  width: 150px;
+  z-index: 10;
+}
+
+.sidebar-body i {
+  color: #f9f9f9;
+  width: 22px;
+}
+
+.sidebar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding: 0 1.25rem 0 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-burger {
+  padding-left: 15px;
+  display: grid;
+  place-items: center;
+}
+
+.sidebar-menu > button {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  height: 40px;
+  font-size: 13px;
+  padding: 0 15px;
+}
+
+.sidebar-menu button span {
+  margin-left: 14px;
+  color: #f9f9f9;
+}
+
+#burg-btn.open {
+  display: none;
+}
+
+#close-btn {
+  display: none;
+}
+#close-btn.open {
+  display: flex;
+}
+
+#mainpage {
+  margin-left: 45px;
+}
+.sidebar-align {
+  width: 6px;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-bottom: 1px solid #121212;
+  margin: 4px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px;
+  border-top: 1px solid #121212;
+  height: 50px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  /* left: 55px; */
+  /* width: 100%; */
+}
+
+/* Body  */
+
+.body {
+  margin: 4px;
+  /* z-index: -999; */
+}
+
+#mls-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mls-form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #121212;
+  margin: 8px;
+  border-radius: 50px;
+  max-width: 300px;
+  width: 300px;
+  height: 64px;
+  position: relative;
+  /* box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.15); */
+}
+
+#mls-form div input {
+  position: absolute;
+  width: 95%;
+  top: 16px;
+  outline: none;
+}
+
+#mls-form div input:focus {
+  background-color: aquamarine;
+  border: none;
+  border-radius: 6px;
+  padding: 2px;
+  overflow: hidden;
+}
+
+#mls-form label {
+  position: absolute;
+  top: -12px;
+  left: 26px;
+  background-color: #f9f9f9;
+  font-weight: 700;
+  padding: 0 6px;
+}
+
+#mls-form div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+  cursor: pointer;
+  color: #f9f9f9;
+}
+#mls-form div:last-child:active {
+  scale: 0.98;
+}
+#mls-form div div {
+  color: #f9f9f9;
+  font-weight: 800;
+  font-size: larger;
+}
